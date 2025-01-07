@@ -20,14 +20,19 @@
   </properties>
 
   <dependencies>
-    <dependencies>
-    <!-- JUnit 5 -->
+
+  <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+  </dependency>
+
+     <!-- JUnit 5 -->
     <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter</artifactId>
-        <version>5.9.3</version>
-        <scope>test</scope>
-    </dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter</artifactId>
+    <version>5.9.3</version>
+  </dependency>
 
     <!-- Mockito -->
     <dependency>
@@ -48,11 +53,9 @@
     <groupId>javax.servlet</groupId>
     <artifactId>jstl</artifactId>
     <version>1.2</version>
-</dependency>
+  </dependency>
 
-</dependencies>
-
-     <dependency>
+    <dependency>
             <groupId>jakarta.enterprise</groupId>
             <artifactId>jakarta.enterprise.cdi-api</artifactId>
             <version>3.0.0</version> 
@@ -86,7 +89,7 @@
       <version>8.0.33</version>
     </dependency>
 
-  </dependencies>
+</dependencies>
 
   <build>
     <finalName>fashion-ecom-app</finalName>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #faf8f8;
+}
+
+.container {
+  position: relative;
+  width: 400px; /* Adjust width as needed */
+  background: rgba(249, 248, 248, 0.974); /* Semi-transparent black for overlay */
+  box-shadow: 0 0 5px rgb(30, 30, 30); /* Neon glow effect */
+  border-radius: 20px;
+  padding: 40px; /* Padding for content spacing */
+  overflow: hidden; /* Prevent overflow of inner elements */
+  color: #0c0c0c; /* Text color */
+}
+
+h3 {
+  text-align: center;
+  font-size: 24px; /* Adjusted font size */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.message {
+  margin-bottom: 15px; /* Space for messages */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error {
+  color: red; /* Error text color */
+  background-color: rgba(252, 251, 251, 0.967); /* Light red background */
+}
+
+.success {
+  color: green; /* Success text color */
+  background-color: rgba(242, 246, 242, 0.997); /* Light green background */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between form groups */
+  position: relative;
+}
+
+.form-group label {
+  position: absolute;
+  top: 10px; /* Start label higher */
+  left: 5px;
+  font-size: 16px;
+  color: #121212;
+  pointer-events: none;
+  transition: 0.5s ease; /* Transition for smooth sliding effect */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Full width for inputs */
+  padding: 10px; /* Padding for comfort */
+  font-size: 16px;
+  color: #080808; /* Change text color to light gray */
+  background: transparent; /* Transparent background */
+  border: none; /* Remove default border */
+  outline: none; /* Remove outline on focus */
+  border-bottom: 2px solid #131313; /* Bottom border for inputs */
+}
+
+/* Improved placeholder styling */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(247, 242, 242, 0.923); /* Lighter gray for placeholder */
+  opacity: 1; /* Ensure opacity for better visibility */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom: 2px solid rgb(10, 10, 10); /* Change bottom border color on focus */
+}
+
+/* Label transitions */
+.form-group input:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label, /* Slide up if input is not empty */
+.form-group textarea:focus ~ label,
+.form-group textarea:not(:placeholder-shown) ~ label { 
+  top: -10px; /* Move label above on focus or when input is filled */
+  left: 5px; /* Slightly adjust left position */
+  font-size: 12px; /* Make label smaller */
+  color: rgb(15, 16, 16); /* Change label color on focus */
+}
+
+.text-center {
+  text-align: center; /* Center text for buttons */
+}
+
+button {
+  position: relative;
+  width: 48%; /* Button width */
+  height: 40px; /* Button height */
+  background: rgb(5, 5, 5); /* Neon background */
+  box-shadow: 0 0 1px rgb(6, 6, 6); /* Glow effect */
+  font-size: 16px;
+  color: #f8f3f3; /* Text color */
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px; /* Rounded buttons */
+  border: none; /* No border */
+  outline: none; /* Remove outline */
+  margin: 5px; /* Space between buttons */
+}
+
+button:hover {
+  background: rgba(15, 15, 15, 0.614); /* Darker shade on hover */
+}
+
+.text-center a {
+  display: inline-block; /* Inline block for the link */
+  margin-top: 10px; /* Space above link */
+  color: rgb(9, 9, 9); /* Link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.text-center a:hover {
+  text-decoration: underline; /* Underline on hover */
+}

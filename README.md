@@ -30,6 +30,12 @@ This project is a fully functional fashion e-commerce website built using Java, 
    ```
 4. Deploy the application on Apache Tomcat.
 5. Access the website at `http://localhost:8080/fashion-ecom-app`.
+## Current UI
+![main page](https://github.com/user-attachments/assets/e1166abe-cdeb-450f-81f4-b24b86c0b93a)
+![Market place](https://github.com/user-attachments/assets/ec86310f-c3ed-4c31-ba96-6dbe2ebfa21b)
+![Login](https://github.com/user-attachments/assets/9421cde9-1508-4507-87fc-4839e6f3fc6d)
+![create account](https://github.com/user-attachments/assets/784a52c3-84e4-4e60-b59d-9850b1f5dba1)
+
 
 ## Future Enhancements
 - **Payment Gateway Integration:** Add secure online payment options.
